@@ -381,4 +381,3 @@ Optional enhancements:
 ✅ **Campus Context** - AI knows about DSU
 ✅ **Production Ready** - Built with error handling
 
-**Enjoy your AI-powered campus assistant!** 🎓🤖
