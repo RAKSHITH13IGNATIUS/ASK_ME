@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ASK DSU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">ASK DSU</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="login.html" class="active btn-login">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="login-container">
+        <div class="login-box">
+            <h2>Student Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@dsu.edu.in" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <button type="submit" class="btn-primary">Login</button>
+                <div id="error-message" class="error-message"></div>
+            </form>
+            <p style="text-align: center; margin-top: 1.5rem; color: var(--text-light);">
+                Don't have an account? <a href="signup.html" style="color: var(--primary); font-weight: 600;">Sign up here</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ASK DSU. All rights reserved.</p>
+    </footer>
+
+    <!-- Supabase Client Library - Using unpkg CDN -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2.39.0/dist/umd/supabase.js"></script>
+    <script src="supabaseClient.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

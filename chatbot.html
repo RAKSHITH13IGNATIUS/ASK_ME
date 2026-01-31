@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - ASK DSU</title>
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="header-content">
+                <h2>ASK DSU Assistant</h2>
+                <span class="status-indicator">● Live</span>
+            </div>
+            <button class="close-btn" onclick="window.close()">✕</button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Yo. Ask me about free classrooms, library status, or where your teachers are hiding.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <form id="chatForm">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your question..."
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" id="sendBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Supabase Client Library - Using unpkg CDN -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2.39.0/dist/umd/supabase.js"></script>
+    <script src="supabaseClient.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
