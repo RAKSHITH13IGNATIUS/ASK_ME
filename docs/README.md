@@ -51,8 +51,6 @@ ASK DSU/
 └── README.md               # This file
 ```
 
-## Quick Start
-
 ### 1. Set Up Supabase
 
 **Follow the complete guide in `SUPABASE_SETUP.md`**
