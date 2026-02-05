@@ -2,7 +2,14 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(pkill:*)"
+      "Bash(pkill:*)",
+      "Bash(npx serve:*)",
+      "Bash(npm run dev:*)",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill /PID 17912 /F)",
+      "Bash(cmd /c \"taskkill /PID 17912 /F\")",
+      "Bash(taskkill //F //PID 17912)"
     ],
     "deny": [],
     "ask": []
